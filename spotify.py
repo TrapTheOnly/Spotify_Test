@@ -17,8 +17,8 @@ class Server:
                 print(f"Dropped packet from {addr[0]}:{addr[1]}")
                 continue
             text = data.decode("utf-8")
-            print(f"Client {addr} said: {text}")
-            respond = f"I recieved your message Client: {addr[0]}:{addr[1]}".encode("utf-8")
+            print(f"Client {addr[0]}:{addr[1]} said: {text}")
+            respond = f"I recieved your message Client: '{addr[0]}:{addr[1]}''".encode("utf-8")
             server_s.sendto(respond, addr)
             print(f"Respond sent to {addr[0]}:{addr[1]}")
 
@@ -29,7 +29,7 @@ class Client:
         
     def launch(self):
         client_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        msg = f"This is a message to server {self.host}:{self.port}. It is {datetime.datetime.now()} here".encode("utf-8")
+        msg = f"This is a message to server {self.host}:{self.port}. It is {datetime.datetime.now().hour}:{datetime.datetime.now().minute} here".encode("utf-8")
         client_s.connect((self.host, self.port))
         delay = 0.1
         hour = datetime.datetime.now().hour
