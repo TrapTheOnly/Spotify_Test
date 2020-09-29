@@ -16,3 +16,7 @@ The exponential backoff of these intervals must be increased by the next factors
 * For the second interval: triples on each iteration
 
 ## Installation
+
+```
+git clone https://github.com/TrapTheOnly/Spotify_Test.git
+```
