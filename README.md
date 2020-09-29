@@ -25,3 +25,17 @@ Install requirements
 ```
 pip install -r requirements.txt
 ```
+
+## Usage Guide
+
+You need at least 2 seperate terminals being open:
+
+Server Terminal
+```
+python3 spotify.py server {{Hostname}} -p (OPTIONAL) {{Port number}}
+```
+
+Client Terminal
+```
+python3 spotify.py server {{Same Hostname}} -p (OPTIONAL) {{Port number}}
+```
