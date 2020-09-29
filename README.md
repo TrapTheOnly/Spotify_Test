@@ -14,3 +14,5 @@ The exponential backoff of these intervals must be increased by the next factors
 
 *For the first and third intervals: doubles each iteration
 *For the second interval: triples on each iteration
+
+## Installation
