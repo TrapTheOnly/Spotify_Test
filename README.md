@@ -1,5 +1,10 @@
 # Spotify Test App
 
+## Table Of Contents
+1. [About](https://github.com/TrapTheOnly/Spotify_Test#about-app)
+2. [Installation](https://github.com/TrapTheOnly/Spotify_Test#installation)
+3. [Usage](https://github.com/TrapTheOnly/Spotify_Test#usage-guide)
+
 ## About App
 
 The Spotify regional server warehouse provides music streaming services for the billions of clients 24/7. Spotify servers responding time are depend on clients load number. Because of this reason, the clients must wait for responding with regarding the next time schedule:
