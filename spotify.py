@@ -17,7 +17,7 @@ class Server:
                 print(f"Dropped packet from {addr[0]}:{addr[1]}")
                 continue
             text = data.decode("utf-8")
-            print(f"Client {addr[0]}:{addr[1]} said: {text}")
+            print(f'Client {addr[0]}:{addr[1]} said: "{text}""')
             respond = f"I recieved your message Client: {addr[0]}:{addr[1]}".encode("utf-8")
             server_s.sendto(respond, addr)
             print(f"Respond sent to {addr[0]}:{addr[1]}")
