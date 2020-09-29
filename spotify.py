@@ -14,13 +14,13 @@ class Server:
         while True:
             data, addr = server_s.recvfrom(MAX_BYTES)
             if random.random() < 0.7:
-                print(f"Dropped packet from {addr}")
+                print(f"Dropped packet from {addr[0]}:{addr[1]}")
                 continue
             text = data.decode("utf-8")
             print(f"Client {addr} said: {text}")
-            respond = f"I recieved your message Client: {addr}".encode("utf-8")
+            respond = f"I recieved your message Client: {addr[0]}:{addr[1]}".encode("utf-8")
             server_s.sendto(respond, addr)
-            print(f"Respond sent to {addr}")
+            print(f"Respond sent to {addr[0]}:{addr[1]}")
 
 class Client:
     def __init__(self, host, port):
