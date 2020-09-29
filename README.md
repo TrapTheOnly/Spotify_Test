@@ -39,3 +39,10 @@ Client Terminal
 ```
 python3 spotify.py server {{Same Hostname}} -p (OPTIONAL) {{Port number}}
 ```
+
+Example of Hostname (recommended):
+`127.0.0.1`
+
+By default Port number is set to `65432`
+
+To stop server, head to Server Terminal and press ``Ctrl+C`` in terminal.
