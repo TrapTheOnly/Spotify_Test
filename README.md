@@ -20,3 +20,8 @@ The exponential backoff of these intervals must be increased by the next factors
 ```
 git clone https://github.com/TrapTheOnly/Spotify_Test.git
 ```
+
+Install requirements
+```
+pip install -r requirements.txt
+```
