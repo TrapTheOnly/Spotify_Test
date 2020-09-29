@@ -1,2 +1,5 @@
-# Spotify_Test
- Network Programming Lab 1
+# Spotify Test App
+
+## About App
+
+
