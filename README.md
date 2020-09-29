@@ -37,7 +37,7 @@ python3 spotify.py server {{Hostname}} -p (OPTIONAL) {{Port number}}
 
 Client Terminal
 ```
-python3 spotify.py server {{Same Hostname}} -p (OPTIONAL) {{Port number}}
+python3 spotify.py client {{Same Hostname}} -p (OPTIONAL) {{Port number}}
 ```
 
 Example of Hostname (recommended):
