@@ -1,7 +1,7 @@
 import socket, datetime, random, argparse, time
 
-MAX_BYTES = 65536
 
+MAX_BYTES = 65536
 class Server:
     def __init__(self, host, port):
         self.host = host
